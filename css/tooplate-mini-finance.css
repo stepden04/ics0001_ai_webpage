@@ -1045,6 +1045,95 @@ a.text-decoration-none:hover {
 
 
 /*---------------------------------------
+  README MARKDOWN STYLING              
+-----------------------------------------*/
+#readme-content h1 {
+  color: var(--heading-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+#readme-content h2 {
+  color: var(--heading-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 8px;
+  margin-top: 30px;
+}
+
+#readme-content h3,
+#readme-content h4,
+#readme-content h5,
+#readme-content h6 {
+  color: var(--heading-color);
+}
+
+#readme-content code {
+  background-color: var(--section-bg-color);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+#readme-content pre {
+  background-color: var(--section-bg-color);
+  padding: 15px;
+  border-radius: var(--border-radius-small);
+  overflow-x: auto;
+}
+
+#readme-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+#readme-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+#readme-content a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+#readme-content ul,
+#readme-content ol {
+  padding-left: 30px;
+}
+
+#readme-content blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 15px;
+  margin-left: 0;
+  color: var(--p-color);
+  font-style: italic;
+}
+
+#readme-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#readme-content table th {
+  background-color: var(--section-bg-color);
+  font-weight: var(--font-weight-bold);
+}
+
+#readme-content table td,
+#readme-content table th {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+}
+
+#readme-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-small);
+}
+
+
+/*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
 @media screen and (max-width: 1200px) {
