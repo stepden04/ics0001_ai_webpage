@@ -362,6 +362,8 @@ strong {
   padding: 15px 30px;
   margin-top: -15px;
   margin-bottom: 10px;
+  color: var(--heading-color);
+  font-weight: var(--font-weight-bold);
 }
 
 .notifications-block p {
@@ -708,6 +710,24 @@ a.text-decoration-none:hover {
   text-align: center;
 }
 
+.custom-block-bottom h5,
+.custom-block-bottom h6,
+.custom-block-bottom p {
+  color: var(--dark-color);
+}
+
+.custom-block-bottom small {
+  color: var(--p-color);
+}
+
+.custom-block-bottom a {
+  color: var(--heading-color);
+}
+
+.custom-block-bottom a:hover {
+  color: var(--primary-color);
+}
+
 .custom-block.custom-block-bottom small {
   text-transform: none;
 }
@@ -777,6 +797,21 @@ a.text-decoration-none:hover {
 .custom-block-exchange,
 .custom-block-contact {
   background: var(--custom-btn-bg-color);
+}
+
+.custom-block-exchange h6,
+.custom-block-contact h6 {
+  color: var(--heading-color);
+}
+
+.custom-block-exchange p,
+.custom-block-contact p {
+  color: var(--dark-color);
+}
+
+.custom-block-exchange small,
+.custom-block-contact small {
+  color: var(--p-color);
 }
 
 .custom-block-exchange .border-bottom {
@@ -896,6 +931,11 @@ a.text-decoration-none:hover {
 
 .account-table thead {
   background: var(--custom-btn-bg-color);
+}
+
+.account-table thead th {
+  color: var(--heading-color);
+  font-weight: var(--font-weight-bold);
 }
 
 .account-table th,
