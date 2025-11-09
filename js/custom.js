@@ -47,7 +47,7 @@
         'profile': ['profile', 'name', 'email', 'stepan', 'denysenko', 'personal', 'information', 'account'],
         'wallet': ['wallet', 'transaction', 'balance', 'payment', 'money', 'account', 'activity', 'transfer'],
         'contact': ['contact', 'message', 'email', 'reach', 'touch', 'tallinn', 'estonia', 'stepan@taltech'],
-        'readme': ['readme', 'documentation', 'read', 'info', 'about', 'project', 'github', 'repository', 'framework', 'bootstrap'],
+        'about': ['about', 'readme', 'documentation', 'read', 'info', 'project', 'github', 'repository', 'framework', 'bootstrap'],
         'overview': ['overview', 'dashboard', 'home', 'welcome', 'main']
       };
 
