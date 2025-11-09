@@ -1032,6 +1032,15 @@ a.text-decoration-none:hover {
 
 .copyright-text {
   font-size: var(--copyright-font-size);
+  color: #ffffff;
+}
+
+.copyright-text a {
+  color: #E0B0FF;
+}
+
+.copyright-text a:hover {
+  color: #ffffff;
 }
 
 
