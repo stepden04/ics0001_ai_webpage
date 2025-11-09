@@ -106,11 +106,11 @@
                         <ul class="dropdown-menu bg-white shadow">
                             <li>
                                 <div class="dropdown-menu-profile-thumb d-flex">
-                                    <img src="https://picsum.photos/64/64?random=10" class="profile-image img-fluid me-3" alt="">
+                                    <img src="https://picsum.photos/id/10/64/64" class="profile-image img-fluid me-3" alt="">
 
                                     <div class="d-flex flex-column">
-                                        <small>User</small>
-                                        <a href="#">user@example.com</a>
+                                        <small>Stepan Denysenko</small>
+                                        <a href="mailto:stepan@taltech.ee">stepan@taltech.ee</a>
                                     </div>
                                 </div>
                             </li>
@@ -194,7 +194,12 @@
                             <div class="custom-block bg-white">
                                 <h5 class="mb-4">Get in Touch</h5>
 
-                                <form class="custom-form contact-form" action="#" method="post" role="form">
+                                <div id="form-message" class="alert alert-success d-none" role="alert">
+                                    <i class="bi-check-circle me-2"></i>
+                                    Thank you! Your message has been sent successfully. I'll get back to you soon.
+                                </div>
+
+                                <form class="custom-form contact-form" id="contact-form" action="#" method="post" role="form">
                                     <div class="row">
                                         <div class="col-lg-6 col-12 mb-3">
                                             <input class="form-control" type="text" name="name" id="name" placeholder="Your Name" required>
@@ -212,12 +217,12 @@
                                             <textarea class="form-control" name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
                                         </div>
 
-                                        <div class="col-lg-12 col-12">
-                                            <button type="submit" class="form-control">
-                                                Send Message
-                                            </button>
-                                        </div>
+                                    <div class="col-lg-12 col-12">
+                                        <button type="submit" class="form-control">
+                                            Send Message
+                                        </button>
                                     </div>
+                                </div>
                                 </form>
                             </div>
                         </div>
@@ -230,7 +235,7 @@
                                     <img src="https://picsum.photos/id/11/64/64" class="profile-image img-fluid me-3" alt="">
                                     <div>
                                         <p class="mb-0"><strong>Email</strong></p>
-                                        <small>user@example.com</small>
+                                        <a href="mailto:stepan@taltech.ee">stepan@taltech.ee</a>
                                     </div>
                                 </div>
 
@@ -246,7 +251,7 @@
                                     <img src="https://picsum.photos/id/13/64/64" class="profile-image img-fluid me-3" alt="">
                                     <div>
                                         <p class="mb-0"><strong>Location</strong></p>
-                                        <small>Available Worldwide</small>
+                                        <small>Tallinn, Estonia</small>
                                     </div>
                                 </div>
 
@@ -275,6 +280,27 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/custom.js"></script>
+        
+        <script>
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show success message
+                var messageDiv = document.getElementById('form-message');
+                messageDiv.classList.remove('d-none');
+                
+                // Scroll to message
+                messageDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                
+                // Reset form
+                this.reset();
+                
+                // Hide message after 5 seconds
+                setTimeout(function() {
+                    messageDiv.classList.add('d-none');
+                }, 5000);
+            });
+        </script>
     </body>
 </html>
 
