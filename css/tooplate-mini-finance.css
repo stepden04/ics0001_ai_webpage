@@ -71,11 +71,21 @@ body::before {
   TYPOGRAPHY               
 -----------------------------------------*/
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+.main-wrapper h1,
+.main-wrapper h2,
+.main-wrapper h3,
+.main-wrapper h4,
+.main-wrapper h5,
+.main-wrapper h6 {
+  color: #ffffff;
+}
+
+.main-wrapper .custom-block h1,
+.main-wrapper .custom-block h2,
+.main-wrapper .custom-block h3,
+.main-wrapper .custom-block h4,
+.main-wrapper .custom-block h5,
+.main-wrapper .custom-block h6 {
   color: var(--heading-color);
 }
 
@@ -197,6 +207,11 @@ strong {
 
 .title-group small {
   font-weight: var(--font-weight-light);
+}
+
+.title-group h1,
+.title-group h2 {
+  color: #ffffff;
 }
 
 .custom-block.section-bg,
